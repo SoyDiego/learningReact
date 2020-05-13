@@ -14,7 +14,7 @@ const Lista = () => {
     };
 	return (
 		<Fragment>
-			<button onClick={agregarElemento}>Agregar elemento</button>
+			<button className="btn btn-primary mb-3" onClick={agregarElemento}>Agregar elemento</button>
 			<ul>{arrayNumeros.map((item, index) => 
                 <li key={index}>{item} - Key: {index}</li>
             )}</ul>

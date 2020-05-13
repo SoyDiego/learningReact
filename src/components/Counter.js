@@ -15,8 +15,8 @@ const Counter = () => {
 		<Fragment>
 			<h1>Primeros pasos en React:</h1>
 			<p>Contador: {numero}</p>
-			<button onClick={oneMore}>One More</button>
-			<button onClick={oneLess}>One Less</button>
+			<button className="btn btn-primary" onClick={oneMore}>One More</button>
+			<button className="btn btn-warning" onClick={oneLess}>One Less</button>
 		</Fragment>
 	);
 };
