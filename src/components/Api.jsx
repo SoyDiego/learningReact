@@ -17,7 +17,13 @@ const Api = () => {
 			{ id: 2, nombre: "VueJs" },
 			{ id: 3, nombre: "Angular" },
 		];
-		setTecnologias(datos);
+
+		//static
+		window.setTimeout(() => {
+			setTecnologias(datos);
+		}, 2000);
+
+		//dinamic
 		obtenerDatos();
 	}, []);
 
