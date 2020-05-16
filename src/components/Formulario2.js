@@ -19,7 +19,7 @@ const Formulario2 = () => {
 			<h2>Formulario 2</h2>
 			<form
 				onSubmit={handleSubmit(onSubmit)}
-				className="row justify-content-center"
+				className="d-flex justify-content-center"
 			>
 				<div className="col-md-3">
 					<input

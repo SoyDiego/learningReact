@@ -21,7 +21,7 @@ const Formulario = () => {
 	return (
 		<Fragment>
 			<h2>Formulario</h2>
-			<form onSubmit={enviarDatos} className="row justify-content-center mt-3">
+			<form onSubmit={enviarDatos} className="d-flex justify-content-center mt-3">
 				<div className="col-md-3">
 					<input
 						className="form-control"

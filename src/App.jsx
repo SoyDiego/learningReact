@@ -3,7 +3,6 @@ import {
 	BrowserRouter as Router,
 	Switch,
 	Route,
-	Link,
 	NavLink,
 } from "react-router-dom";
 
@@ -15,7 +14,7 @@ import Formulario from "./components/Formulario";
 import Formulario2 from "./components/Formulario2";
 import Saludo from "./components/Saludo";
 import Comentario from "./components/Comentario";
-
+import Api from "./components/Api";
 function App() {
 	const usuario = {
 		nombre: "Diego",
@@ -26,13 +25,13 @@ function App() {
 	return (
 		<Router>
 			<div className="btn-group m-5">
-				<NavLink  exact to="/" className="btn btn-dark">
+				<NavLink exact to="/" className="btn btn-dark">
 					Inicio
 				</NavLink>
-				<NavLink  exact to="/Forms" className="btn btn-dark">
+				<NavLink exact to="/Forms" className="btn btn-dark">
 					Forms
 				</NavLink>
-				<NavLink  exact to="/all" className="btn btn-dark">
+				<NavLink exact to="/all" className="btn btn-dark">
 					Otros
 				</NavLink>
 			</div>
@@ -58,6 +57,7 @@ function App() {
 				<hr />
 				<Comentario usuario={usuario} />
 				<hr />
+				<Api />
 			</Route>
 		</Router>
 	);
